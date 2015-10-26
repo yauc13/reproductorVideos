@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Reproductor de m&uacute;sica con HTML5, ejemplo de reproductor de Audio HTML5 - www.lewebmonster.com</title>
+		<link rel="stylesheet" type="text/css" href="css/reproductor.css">
+	</head>
+	<body  onload="init();">
+		<div id="divContenedor">
+			<div id="divReproductor">
+				<div id="divInfo">
+					<div id="divLogo">
+						<img src="img/logo.png" align="left">
+					</div>
+
+
+
+				<div> 
+					<video id="Video1" style="border: 1px solid blue;" height="240" width="320" controls>      
+					     HTML5 Video is required for this example
+					</video>
+  					
+					<div id="buttonbar">
+				    <button id="restart" >[]</button> 
+				    <button id="rew" >&lt;&lt;</button>
+				    <button id="play">&gt;</button>
+				    <button id="fwd" >&gt;&gt;</button>
+				    </div>     
+					<div id= "inputField">
+					    <input type="text" id="videoFile" value="locuraAutomatica.mp4" />        
+					    <button id="loadVideo" >Load</button>
+					    <label id="lblSing"><strong>Sing: </strong><span>-</span></label>
+					</div>
+					<div id="errorMsg" style="color:Red;" ></div>
+				</div> 
+
+
+
+					<div id="divInfoCancion">
+						<label id="lblCancion"><strong>Nombre: </strong><span>-</span></label>
+						<label id="lblArtista"><strong>Artista: </strong><span>-</span></label>
+						<label id="lblDuracion"><strong>Duraci&oacute;n: </strong><span>-</span></label>
+						<label id="lblEstado"><strong>Transcurrido: </strong><span>-</span></label>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+				<div id="divControles">
+					<input type="button" id="btnReproducir" title="Reproducir">
+					<input type="button" id="btnPausar" title="Pausar/Continuar">
+					<input type="button" id="btnAnterior" title="Anterior">
+					<input type="button" id="btnSiguiente" title="Siguiente">
+					<input type="button" id="btnSubirVolumen" title="Subir volumen">
+					<input type="button" id="btnBajarVolumen" title="Bajar volumen">
+					<input type="button" id="btnSilencio" title="Poner/Quitar silencio">
+					<input type="button" id="btnRepetir" title="Repetir la lista al finalizar">
+				</div>
+				<div id="divProgreso">
+					<div id="divBarra"></div>
+				</div>
+				<div id="divLista">
+
+
+
+
+					<ol id="olCanciones">
+
+						<li rel="audio/moldo/Bailando.mp4">
+							<strong>El silencio</strong>
+							<em>Moldo</em>
+						</li>
+						<li rel="audio/moldo/Ginza.mp4">
+							<strong>Cicatrices</strong>
+							<em>Moldo</em>
+						</li>
+						<li rel="audio/moldo/SomosProhibidos.mp4">
+							<strong>Daramor</strong>
+							<em>Moldo</em>
+						</li>
+						<li  rel="audio/moldo/HastaAyer.mp4">
+							<strong>Video Hasta ayer</strong>
+							<em>Moldo</em>
+						</li>
+					</ol>
+				</div>
+
+
+				
+
+				<div id="divCreditos">
+					<h1>Reproductor de m&uacute;sica con HTML5 y jQuery</h1>
+					<p>Ejemplo por Cali Rojas - <a href="http://www.lewebmonster.com" target="_blank">www.lewebmonster.com</a></p>
+					<p>M&uacute;sica por el cantautor costarricense <a href="http://moldo.bandcamp.com" target="_blank">Moldo</a></p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/ext/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/reproductor.js"></script>
+	</body>
+</html>
